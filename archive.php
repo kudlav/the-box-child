@@ -14,9 +14,9 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
-					
+
 			<header class="page-header">
-			
+
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) {
@@ -47,7 +47,7 @@ get_header(); ?>
 							printf( __( 'Yearly Archives: %s', 'the-box' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
 						} else {
-							printf( __( 'Archives: %s', 'the-box' ), '<span>' . $term->name . '</span>' );
+							printf( __( 'Archives: %s', 'the-box' ), '<span>' . $term . '</span>' );
 
 						}
 					?>
@@ -67,20 +67,20 @@ get_header(); ?>
 					}
 				?>
 			</header><!-- .page-header -->
-			
+
 			<div class="posts-loop clearfix">
 				<div class="row">
-					
+
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="<?php thebox_grid(); ?>">
 							<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 						</div>
 					<?php endwhile; ?>
-				
+
 				</div>
 			</div><!-- .posts-loop -->
-			
+
 			<?php the_posts_pagination( array(
 			'mid_size' => 2,
 			'prev_text' => __( '&larr;', 'the-box' ),
