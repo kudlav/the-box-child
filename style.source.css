@@ -1,0 +1,217 @@
+/*
+ Theme Name:   The Box (upraveno)
+ Theme URI:    http://www.designlabthemes.com/the-box-wordpress-theme/
+ Description:  The Box Child Theme
+ Author:       Vladan Kudlac
+ Author URI:   https://kudlav.github.io/
+ Template:     the-box
+ Version:      1.1.0
+ Text Domain:  thebox
+*/
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	color: #000;
+	font-size: 14.5px;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	color: #fff;
+}
+
+.header-image {
+	margin-bottom: 0;
+	max-height: 300px;
+	overflow-y: hidden;
+}
+
+.site-brand {
+	margin: 0;
+}
+
+.post-thumbnail img {
+	margin-bottom: 0;
+}
+
+.page-header h1 {
+	font-size: initial;
+}
+
+button#menu-toggle {
+	position: initial;
+	right: initial;
+	top: initial;
+}
+
+button#menu-toggle.toggled-on {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+button#menu-toggle .button-toggle {
+	position: relative;
+	top: 0;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 0em;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+	margin-left: inherit;
+}
+
+.entry-content a {
+	text-decoration: underline;
+}
+
+.entry-content, .entry-summary {
+	padding: 10px 20px;
+}
+
+.widget {
+	color: #454545;
+	border: 1px #c1d6c9 solid;
+}
+
+.widget ul .children li {
+	padding: 0.7em 0 0 1em;
+}
+
+table {
+	margin: initial;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+ul.post-attachments {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: inherit;
+}
+
+a {
+	color: #055925;
+}
+
+a.wp-block-social-link-anchor {
+	color: inherit!important;
+}
+
+/* Zuzeni kategorie poctu komentaru v prehledu clanku */
+.posted-on, .byline, .comments-link {
+	margin-top: 0;
+}
+.entry-footer {
+	padding: 13px 20px;
+}
+
+/* Seznamy v popisech rubrik */
+ul.widget_meta {
+	list-style: none;
+}
+
+.taxonomy-description ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Zelena bublina s upozornenim */
+.alert {
+	padding: .75rem 1.25rem;
+	margin: 1rem 0;
+	border: 1px solid #c3e6cb;
+	border-radius: .25rem;
+	color: #155724;
+	background-color: #d4edda;
+}
+
+/* Zvyseni kontrastu data a autora clanku */
+.entry-meta, .entry-meta a {
+	color: #767676;
+}
+
+/* Zelene datum u clanku - kontrast, pozice, sirka */
+.entry-time {
+	top:10px;
+	background-color: rgba(5,89,37, 0.75)!important;
+	letter-spacing: initial;
+}
+
+.w-auto table {
+	width: auto;
+}
+
+@media screen and (max-width: 480px) {
+	/* Header */
+	.header-image {
+		display: initial;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.header-image {
+		margin-top: 0;
+	}
+	.post-thumbnail {
+		float: right;
+		padding-left: 5px;
+		max-width: 200px;
+	}
+}
+
+@media screen and (min-width:640px) {
+	#page {
+		padding:0 20px
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#page {
+		max-width: initial;
+		padding: 0 20px;
+	}
+	.post .entry-header {
+		min-height: initial;
+	}
+}
+
+@media (max-width: 768px) {
+	#site-navigation {
+		margin-top: 10px;
+		background-color: transparent;
+	}
+	.main-navigation .sub-menu {
+		padding: 0em 1.5em;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#page {
+		max-width: 1100px;
+	}
+	.content-area {
+		width: 67.6%; /* 640px->676px */
+		float: right;
+	}
+	.widget-area {
+		width: 29.9%; /* 300px->299px */
+		float: left;
+	}
+}

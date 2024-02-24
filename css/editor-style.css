@@ -1,0 +1,11 @@
+/*
+Theme Name: The Box Child
+Description: Used to style the TinyMCE editor.
+*/
+
+html .mceContentBody {
+	max-width: 703px;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: inherit;
+}
