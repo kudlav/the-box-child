@@ -6,3 +6,5 @@
 - Template:     the-box
 - Version:      1.1.0
 - Text Domain:  thebox
+
+![kmz-brno.cz screenshot](screenshot.png)
