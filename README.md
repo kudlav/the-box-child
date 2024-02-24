@@ -4,7 +4,7 @@
 - Author:       Vladan Kudlac
 - Author URI:   https://kudlav.github.io/
 - Template:     the-box
-- Version:      1.1.0
+- Version:      1.1.1
 - Text Domain:  thebox
 
 ![kmz-brno.cz screenshot](screenshot.png)
